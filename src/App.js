@@ -10,7 +10,7 @@ import DisplayNotes from './components/displayNotes';
 
 export default class App extends Component {
   constructor() {
-      super();
+      super(props);
 
       this.state = {
           posterData : [ 
