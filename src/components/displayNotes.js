@@ -6,7 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import DeleteIcon from '@material-ui/icons/Delete';
 
-export default class displayNotes extends Component {
+class displayNotes extends Component {
     styles = {
         marginTop: 5
     }
@@ -19,7 +19,7 @@ export default class displayNotes extends Component {
         this.props.handleDeleteCard(poster);
     }
 
-    render() {
+    render() { 
         return (
             <Fragment>
                 <Grid container spacing={40} style={this.styles}>
@@ -43,3 +43,5 @@ export default class displayNotes extends Component {
         )
     }
 }
+
+export default displayNotes;
